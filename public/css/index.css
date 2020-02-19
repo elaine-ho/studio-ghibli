@@ -1,0 +1,46 @@
+body{
+    background: white;
+}
+
+header{
+    padding-bottom: 40px;
+}
+
+
+.poster {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.poster-div{
+    height: 80%;
+}
+
+.poster-div:hover{
+    background-color: black;
+}
+
+.poster:hover {
+    opacity: 0.7;
+}
+
+.caption-div{
+    text-align: center;
+}
+
+.caption{
+    color: #606060;
+}
+
+.caption:link {
+    color: #606060;
+}
+
+.caption:hover {
+    color: #606060;
+}
+
+.caption:visited {
+    color: #606060;
+}

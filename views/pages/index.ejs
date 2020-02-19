@@ -7,13 +7,14 @@
     <%- include('../partials/head') %>
 </head>
 
-<body class="container">
+<body>
 
 <header>
     <%- include('../partials/header') %>
 </header>
 
 <main>
+    <div class="container">
     <% for(let i=0; i<films.length;i++){ %>
         <%if (i%4 == 0) { %>
             <div class="row">
@@ -21,20 +22,26 @@
         
         <div class="col-md-3 col-sm-6 col-xs-12">
             <a href="">
-                <img alt="<%= films[i].title %>" src="<%= films[i].image_url %>" class="img-responsive home-images">
-                <figcaption class="figure-caption"><%= films[i].title %></figcaption>
+                <div class="poster-div">
+                <img alt="<%= films[i].title %>" src="<%= films[i].image_url %>" class="img-responsive poster">
+                </div>
             </a>
+            <div class="caption-div">
+                <a class="caption figure-caption text-center" href=""><%= films[i].title %></a>
+            </div>
         </div>
 
         <%if (i%4 == 3) { %>
             </div>
         <% } %>
     <% } %>    
+    </div>
 </main>
 
 <footer>
     <%- include('../partials/footer') %>
 </footer>
+
 
 </body>
 </html>
