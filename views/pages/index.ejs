@@ -16,26 +16,47 @@
 <main>
     <div class="container">
     <% for(let i=0; i<films.length;i++){ %>
-        <%if (i%4 == 0) { %>
+        <% if (i%4 == 0) { %>
             <div class="row">
         <% } %>
         
         <div class="col-md-3 col-sm-6 col-xs-12">
-            <a href="">
+            <a href="/detail?id=<%=i%>">
                 <div class="poster-div">
-                <img alt="<%= films[i].title %>" src="<%= films[i].image_url %>" class="img-responsive poster">
+                <img alt="<%= films[i].title %>" src="<%= films[i].image_url %>" class="poster">
                 </div>
             </a>
             <div class="caption-div">
-                <a class="caption figure-caption text-center" href=""><%= films[i].title %></a>
+                <a class="caption figure-caption" href=""><%= films[i].title %></a>
             </div>
         </div>
 
-        <%if (i%4 == 3) { %>
+        <% if (i%4 == 3) { %>
             </div>
         <% } %>
     <% } %>    
     </div>
+
+    <nav aria-label="Pagination">
+        <ul class="pagination justify-content-center">
+            <li class="page-item <% if (page<=1) { %> disabled <% } %>">
+            <a class="page-link" href="?page=<%=(page*1-1)%>" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+            </li>
+            <% for(let i=1; i<=totalPages; i++){ %>
+                <li class="page-item <% if (page==i) { %> active <% } %>"><a class="page-link" href="?page=<%=i%>"><%=i%></a></li>
+            <% } %>
+          <li class="page-item <% if (page>=totalPages) { %> disabled <% } %>">
+            <a class="page-link" href="?page=<%=(page*1+1)%>" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
 </main>
 
 <footer>
