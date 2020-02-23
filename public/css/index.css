@@ -1,5 +1,5 @@
 body{
-    background: white;
+    background: #d8d0c1;
 }
 
 header{
@@ -12,13 +12,14 @@ header{
 }
 
 .poster {
-    object-fit: cover;
+    object-fit: fill;
     height: 100%;
     width: 100%;
 }
 
 .poster-div{
     height: 80%;
+    width: 100%;
 }
 
 .poster-div:hover{
@@ -34,25 +35,25 @@ header{
 }
 
 .caption{
-    color: #606060;
+    color: #6f686d;
 }
 
 .caption:link {
-    color: #606060;
+    color: #6f686d;
 }
 
 .caption:hover {
-    color: #606060;
+    color: #6f686d;
 }
 
 .caption:visited {
-    color: #606060;
+    color: #6f686d;
 }
 
 .pagination > li > a
 {
     background-color: white;
-    color: #5A4181;
+    color: #b3b492;
 }
 
 .pagination > li > a:focus,
@@ -60,7 +61,7 @@ header{
 .pagination > li > span:focus,
 .pagination > li > span:hover
 {
-    color: #5a5a5a;
+    color: #b3b492;
     background-color: #eee;
     border-color: #ddd;
 }
@@ -68,12 +69,12 @@ header{
 .pagination > .active > a
 {
     color: white;
-    background-color: #5A4181 !Important;
-    border: solid 1px #5A4181 !Important;
+    background-color: #b3b492 !Important;
+    border: solid 1px #b3b492 !Important;
 }
 
 .pagination > .active > a:hover
 {
-    background-color: #5A4181 !Important;
-    border: solid 1px #5A4181;
+    background-color: #b3b492 !Important;
+    border: solid 1px #b3b492;
 }
