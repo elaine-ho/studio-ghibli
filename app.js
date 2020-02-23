@@ -92,7 +92,8 @@ app.get('/detail', asyncMiddleware(async (req, res) => {
     }
     res.render('pages/detail',{
         lookup: films.anime[req.query.id].lookup,
-        characters: films.anime[req.query.id].characters
+        characters: films.anime[req.query.id].characters,
+        tab: 'about'
     });
 }));
 
