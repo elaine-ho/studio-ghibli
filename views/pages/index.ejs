@@ -21,13 +21,13 @@
         <% } %>
         
         <div class="col-md-3 col-sm-6 col-xs-12">
-            <a href="/detail?id=<%=i%>">
+            <a href="/detail?id=<%=(films.length*(page-1) + i)%>">
                 <div class="poster-div">
                 <img alt="<%= films[i].title %>" src="<%= films[i].image_url %>" class="poster">
                 </div>
             </a>
             <div class="caption-div">
-                <a class="caption figure-caption" href=""><%= films[i].title %></a>
+                <a class="caption figure-caption" href="/detail?id=<%=(films.length*(page-1) + i)%>"><%= films[i].title %></a>
             </div>
         </div>
 
