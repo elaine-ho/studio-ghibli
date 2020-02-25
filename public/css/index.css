@@ -81,6 +81,7 @@ header{
 
 .title{
     background-color: #b3b492;
+    color: white;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -102,4 +103,16 @@ footer {
     background-color: #b3b492;
     color:#d8d0c1;
     margin-top: 50px;
+}
+
+.detail p{
+    font-size: 14px;
+}
+
+.misc-table th{
+    padding-right: 50px;
+}
+
+.misc-table{
+    margin-bottom: 20px;
 }

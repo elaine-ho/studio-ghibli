@@ -26,9 +26,28 @@
         </p>
         </div>
 
-
+        <div class="detail">
         <div class="row">
         <div class="col-md-8 col-sm-8 col-xs-12">
+            <h4>About</h4>
+            <table class="misc-table">
+                <tr>
+                    <th>Aired:</th>
+                    <td><%=lookup.aired.string%></td>
+                </tr>
+                <tr>
+                    <th>Duration:</th>
+                    <td><%=lookup.duration%></td>
+                </tr>
+                <tr>
+                    <th>Rating:</th>
+                    <td><%=lookup.rating%></td>
+                </tr>
+                <tr>
+                    <th>Score:</th>
+                    <td><%=lookup.score%>/10</td>
+                </tr>
+            </table>
             <h4>Synopsis</h4>
             <p><%=lookup.synopsis%></p>
             <h4>Background</h4>
@@ -59,6 +78,7 @@
                 <span class="sr-only">Next</span>
                 </a>
             </div>
+        </div>
         </div>
         </div>
 
