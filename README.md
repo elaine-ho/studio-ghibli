@@ -8,5 +8,6 @@ First run `npm install` from the root to install the dependencies.
 You can run either commands to run the code:
 - `node ./`
 - `node app.js`
+
 To run the test cases using nightwatch, use command
 - `node app.js tests/test.js`
