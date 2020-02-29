@@ -15,6 +15,7 @@ header{
     object-fit: fill;
     height: 100%;
     width: 100%;
+    border: 1px #6f686d solid;
 }
 
 .poster-div{
@@ -92,6 +93,7 @@ header{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    border: 1px #6f686d solid;
 }
 
 .shadow {
