@@ -1,7 +1,7 @@
 # Studio Ghibli Archive
 This website calls the [Jikan](https://jikan.docs.apiary.io/#) API which is a wrapper for the My Anime List API.
 It displays all of Studio Ghibli's productions and displays some detail about them.
-This is written using Express with EJS. 
+This is written in Node.js's Express with EJS. 
 
 ## Installation
 First run `npm install` from the root to install the dependencies.
